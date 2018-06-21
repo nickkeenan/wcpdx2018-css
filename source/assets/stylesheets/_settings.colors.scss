@@ -214,10 +214,12 @@
 
 /* Brand */
 
-$color-brand-primary:             #28AFB0;
-$color-brand-secondary:           #E9724C;
-$color-brand-tertiary:            #0169A6;
+$color-brand-primary:             #28AFB0; // Sea Green
+$color-brand-secondary:           #E9724C; // Orange
+$color-brand-tertiary:            #0169A6; // Sapphire Blue
 $color-brand-quaternary:          #222;
+$color-light-teal:                #50C9CE; // Light Sea Green
+$white:                           #f7f7f7; // Ghost White
 
 @include cc($color-brand-primary, 'color-brand-primary');
 @include cc($color-brand-secondary, 'color-brand-secondary');
@@ -266,7 +268,7 @@ $color-link-visited:         tint($color-link, 20%);
 $color-link-alt:             $color-brand-secondary;
 $color-link-alt-hover:       mix($color-link-alt, #000, 90%);
 $color-link-alt-focus:       mix($color-link-alt, #000, 70%);
-$color-link-alt-visited:     mix($color-link-alt, #fff, 50%);
+$color-link-alt-visited:     mix($color-link-alt, $white, 50%);
 
 @include cc($color-link-alt, 'color-link-alt');
 @include cc($color-link-alt-focus, 'color-link-alt-focus');
