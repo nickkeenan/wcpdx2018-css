@@ -21,7 +21,6 @@
 @import "bourbon/bourbon";             // Bourbon [http://bourbon.io/]
 @import "susy/susy";                   // Susy [http://susy.oddbird.net/]
 @import "modular-scale/modular-scale"; // Modular scale [https://github.com/modularscale/modularscale-sass]
-
 // Settings
 //
 // Global variables
@@ -109,6 +108,8 @@
 @import "components.sessions";
 @import "components.speakers";
 @import "components.sponsors";
+
+@import "components.social";
 
 @import "components.widgets";
 @import "components.widget-subscribe";

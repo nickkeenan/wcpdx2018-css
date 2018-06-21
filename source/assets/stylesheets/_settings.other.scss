@@ -11,6 +11,17 @@ $z-index-footer:                  100;
 $z-index-modal:                   500;
 $z-index-skip-links:              600;
 
+// ********** Media Breakpoints ********** //
+$screen-xs-min:         480px;
+$screen-sm-min:         768px;
+$screen-md-min:         992px;
+$screen-lg-min:         1200px;
+
+$screen-xs-max:         $screen-sm-min - 1;
+$screen-sm-max:         $screen-md-min - 1;
+$screen-md-max:         $screen-lg-min - 1;
+
+
 /* Units */
 $unit-xs:                       rem(8);
 $unit-s:                        rem(16);
@@ -38,15 +49,15 @@ $box-shadow-medium:             0 rem(1) rem(6) 0 rgba(0,0,0,.2);
 $box-shadow-large:              0 rem(1) rem(24) 0 rgba(0,0,0,.2);
 
 /* Logo size */
-$site-logo-width:               360px; // Width of the image/element
-$site-logo-height:              360px; // Height of the image/element
-$site-logo-proportion:          .5; // Change the logo proportion in header e.g. .5 will reduce the logo size by half.
-$site-logo-path:                url('https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png'); // Logo image
+$site-logo-width:               400px; // Width of the image/element
+$site-logo-height:              400px; // Height of the image/element
+$site-logo-proportion:          .25; // Change the logo proportion in header e.g. .5 will reduce the logo size by half.
+$site-logo-path:                url('https://2018.portland.wordcamp.org/files/2018/06/WCP18_Logo_temp-white.png'); // Logo image
 // $site-logo-path:                url('https://2017.europe.wordcamp.org/files/2016/11/logo-wceu17-dark-icon.png'); // Logo image
 
 /* Hero */
-$site-hero-path-small:          url('https://c2.staticflickr.com/8/7342/27927265956_6755e5913e_b.jpg'); // Background image
-$site-hero-path-large:          url('https://c2.staticflickr.com/8/7342/27927265956_e66b460cbe_o.jpg'); // Background image
+$site-hero-path-small:          url('https://2018.portland.wordcamp.org/files/2018/06/Home-Header.png'); // Background image
+$site-hero-path-large:          url('https://2018.portland.wordcamp.org/files/2018/06/Home-Header.png'); // Background image
 $site-hero-background:          tint($color-brand-secondary, 90%); // Hero color background
 $site-hero-overlay:             .8; // Image overlay color opacity
 

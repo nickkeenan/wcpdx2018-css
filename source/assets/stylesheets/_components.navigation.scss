@@ -112,6 +112,8 @@
 
   position: relative;
 
+
+
   &:before {
 
     position: absolute;
@@ -128,7 +130,8 @@
 
   @include breakpoint(to-small) {
 
-    background-color: $color-brand-tertiary;
+
+    background-color: $color-brand-secondary;
 
 
 
@@ -138,6 +141,11 @@
 
     }
 
+  }
+
+  #primary-menu > ul > li > a {
+    color: white;
+    padding: 15px;
   }
 
 }
