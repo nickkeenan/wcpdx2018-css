@@ -11,13 +11,15 @@
 //
 // Style guide: 1.typography
 
+$spectral: "Spectral", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+
 /* Modular scale */
 $ms-base: 1em;
 $ms-ratio: 1.25;
 
 /* Fonts */
 $font-brand-primary:              $helvetica;
-$font-brand-secondary:            $helvetica;
+$font-brand-secondary:            $spectral;
 
 /* Font use case */
 $font-body:                       $font-brand-primary;
