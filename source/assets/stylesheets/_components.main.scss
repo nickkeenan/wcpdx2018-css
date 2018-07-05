@@ -56,8 +56,19 @@
 
 }
 
-.section--secondary {
-  background: $blue;
+.section--secondary, .entry-footer {
+
+  margin: 0 -15px;
+  padding: 40px 15px;
+  background: $color-brand-tertiary;
+
+
+
+  @include breakpoint(small) {
+    margin: 0 -50%;
+    padding: 40px 0;
+  }
+
   h1,h2,h3,h4,h5,h6, p {
     color: #f3f3f3;
   }
@@ -67,6 +78,10 @@
       color: white;
     }
   }
+}
+
+.no-results {
+  margin-bottom: 80px;
 }
 
 
