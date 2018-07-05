@@ -48,6 +48,28 @@
 
 }
 
+.section__container {
+
+    @include container-center();
+
+    text-align: left;
+
+}
+
+.section--secondary {
+  background: $blue;
+  h1,h2,h3,h4,h5,h6, p {
+    color: #f3f3f3;
+  }
+  a {
+    color: white;
+    &:hover, &:focus, &:active {
+      color: white;
+    }
+  }
+}
+
+
 
 /*
  * Content
