@@ -207,7 +207,7 @@
 .menu-item a {
 
   display: block;
-  color: $color-link;
+  color: white;
   padding: $unit-xs $unit-s;
 
   text-decoration: none;
@@ -218,7 +218,7 @@
   &:focus,
   &.focus {
 
-    color: $color-text-strong;
+    color: white;
     background-color: $color-link-hover;
 
   }
@@ -309,7 +309,8 @@
     &.focus > .sub-menu {
 
       left: 0;
-
+      top: 70px;
+ 
     }
 
     &.current-menu-item > a:after {
