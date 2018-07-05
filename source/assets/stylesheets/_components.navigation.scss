@@ -310,7 +310,7 @@
 
       left: 0;
       top: 70px;
- 
+
     }
 
     &.current-menu-item > a:after {
@@ -321,6 +321,14 @@
 
   }
 
+}
+
+.page-navigation-container {
+  ul ul {
+    a {
+      width: 100%;
+    }
+  }
 }
 
 .sub-menu {
@@ -340,7 +348,6 @@
     a {
 
       padding-left: rem(40);
-
       background-image: $image-bullet-color;
       background-repeat: no-repeat;
       background-size: 12px;
@@ -362,6 +369,7 @@
 
     position: absolute;
     top: 100%;
+    width: 100%;
     left: -999em;
     z-index: $z-index-navigation-submenu;
 
@@ -392,7 +400,7 @@
   @include breakpoint(medium) {
 
     a {
-
+      width: 100%;
       padding-left: $unit-m;
       padding-right: $unit-m;
 
@@ -403,7 +411,7 @@
   @include breakpoint(large) {
 
     a {
-
+      width: 100%;
       padding-left: $unit-l;
       padding-right: $unit-l;
 
