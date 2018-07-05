@@ -83,6 +83,7 @@
 .entry-footer {
 
   margin-bottom: $unit-default;
+  text-align: center;
 
   @include font-size(16);
   line-height: em(24,16);
@@ -106,7 +107,8 @@
 
   a {
 
-    color: $color-link-alt;
+    color: white;
+    text-decoration: underline;
 
     &:hover,
     &:focus,

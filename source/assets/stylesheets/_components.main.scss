@@ -52,13 +52,12 @@
 
     @include container-center();
 
-    text-align: left;
 
 }
 
 .section--secondary, .entry-footer {
 
-  margin: 0 -15px;
+  margin: 40px -15px 0;
   padding: 40px 15px;
   background: $color-brand-tertiary;
 
@@ -69,8 +68,12 @@
     padding: 40px 0;
   }
 
-  h1,h2,h3,h4,h5,h6, p {
+  h1,h2,h3,h4,h5,h6{
     color: #f3f3f3;
+    text-align: center;
+  }
+  p, label {
+   color: #f3f3f3;
   }
   a {
     color: white;
@@ -84,7 +87,9 @@
   margin-bottom: 80px;
 }
 
-
+.hentry {
+  margin: 0;
+}
 
 /*
  * Content
