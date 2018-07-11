@@ -48,6 +48,14 @@
 
 }
 
+.search-results {
+  article {
+    margin: 50px 0;
+
+  }
+}
+
+
 .entry-meta {
 
   margin-bottom: $unit-s;
@@ -92,6 +100,12 @@
   @include font-size(16);
   line-height: em(24,16);
   color: $color-text-weak;
+
+  display: none;
+
+  .admin-bar & {
+    display: block;
+  }
 
   > :after {
 
