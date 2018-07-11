@@ -52,6 +52,10 @@
 
   margin-bottom: $unit-s;
 
+  .byline {
+    display: none;
+  }
+
   a {
 
     color: $color-link-alt;
