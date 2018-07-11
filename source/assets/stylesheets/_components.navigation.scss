@@ -20,12 +20,13 @@
   padding: $unit-s $unit-s;
   margin: 0;
 
-  margin-top: rem(2);
+  // margin-top: rem(2);
   width: 100%;
 
   // font-size: ms(0);
   font-size: 0; /* Hides the default "Primary menu" label */
   line-height: 24px;
+  border: 0;
 
   font-weight: $bold;
   text-align: center;
@@ -122,7 +123,7 @@
     right: 0;
 
     height: rem(2);
-    background-color: $color-link;
+    background-color: $color-brand-tertiary;
 
     content: "";
 
@@ -131,8 +132,8 @@
   @include breakpoint(to-small) {
 
 
-    background-color: $color-brand-secondary;
-
+    background-color: $color-brand-tertiary;
+    display: block;
 
 
     &.toggled-on .menu {
@@ -225,7 +226,7 @@
 
   @include breakpoint(medium) {
 
-    padding: $unit-s $unit-m;
+    padding: 1rem;
 
   }
 
@@ -309,7 +310,22 @@
     &.focus > .sub-menu {
 
       left: 0;
-      top: 70px;
+
+      @include breakpoint(to-small) {
+        position: static;
+        width: 100%;
+      }
+
+      @include breakpoint(small) {
+        top: 39px;
+      }
+      @include breakpoint(medium) {
+        top: 55px;
+      }
+      @include breakpoint(large) {
+        top: 70px;
+      }
+
 
     }
 
@@ -325,8 +341,21 @@
 
 .page-navigation-container {
   ul ul {
+    @include breakpoint(to-small) {
+      left: 0;
+      position: static;
+      top: 0;
+      float: none;
+      box-shadow: none;
+    }
     a {
       width: 100%;
+    }
+  }
+  li {
+    float: none;
+    @include breakpoint(small) {
+      float: left;
     }
   }
 }
@@ -344,11 +373,14 @@
   }
 
   @include breakpoint(to-small) {
-
+    box-shadow: none;
+    position: static;
+    top: 0;
+    left: 0;
     a {
 
       padding-left: rem(40);
-      background-image: $image-bullet-color;
+      // background-image: $image-bullet-color;
       background-repeat: no-repeat;
       background-size: 12px;
       background-position: $unit-s 50%;
