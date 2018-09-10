@@ -360,8 +360,8 @@ $color-input-radio-active:        $color-brand-primary;
  * Buttons
  */
 
-$color-button-regular:            $color-grey-10;
-$color-button-regular-hover:      $color-grey-20;
+$color-button-regular:            $color-brand-secondary;
+$color-button-regular-hover:      darken($color-brand-secondary, 15%);
 $color-button-primary:            $color-brand-primary;
 $color-button-primary-hover:      shade($color-button-primary, 10%);
 $color-button-secondary:          $color-brand-secondary;

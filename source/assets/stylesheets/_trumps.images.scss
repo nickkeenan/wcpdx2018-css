@@ -12,7 +12,7 @@
   @include breakpoint(extra-small) {
 
     top: rem(6);
-    margin-bottom: $unit-m;
+    margin-bottom: 0.5em;
     width: 36%;
 
   }
