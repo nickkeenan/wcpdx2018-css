@@ -55,7 +55,7 @@
 
 }
 
-.section--secondary, .entry-footer {
+.section--secondary, .entry-footer, .section--tertiary {
 
   margin: 40px -15px 0;
   padding: 40px 15px;
@@ -83,6 +83,17 @@
     &:hover, &:focus, &:active {
       color: white;
     }
+  }
+}
+
+.section--tertiary {
+  background: $color-light-teal;
+  h1,h2,h3,h4,h5,h6{
+    color: rgba(0,0,0,.9);
+    text-align: center;
+  }
+  p, label {
+   color: rgba(0,0,0,.9);
   }
 }
 
