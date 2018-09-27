@@ -9,15 +9,51 @@
 //
 // Style guide: 6.speakers
 
+body.page-slug-speakers {
+  #primary {
+    @include mq-medium {
+      max-width: 70rem;
+    }
+  }
+}
+
 .wcorg-speakers {
 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include mq-small {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
 
+}
+
+img.grav-clone {
+  border: 0 !important;
+  display: none !important;
 }
 
 .wcorg-speaker {
 
+  @include mq-small {
+    flex: 1 1 43%;
+    margin: 0 30px 15px;
+  }
+  @include mq-medium {
+    flex: 1 1 25%;
+    margin: 0 30px 15px;
+  }
+
   border-top: 1px solid $color-border-weak;
   padding: $unit-default 0;
+
+  h2 {
+    margin-bottom: 1em;
+    @include mq-medium {
+      font-size: 1.8rem;
+    }
+  }
 
   .wcorg-speaker-description {
 
@@ -29,9 +65,12 @@
   .avatar {
 
     float: left;
-    margin: $unit-xs $unit-s $unit-xs 0;
+    width: 100%;
+    height: auto;
+    margin: $unit-xs $unit-m 1em 0;
 
   }
+
 
   p {
 
